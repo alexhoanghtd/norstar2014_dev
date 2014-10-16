@@ -44,6 +44,36 @@ ul,li,ol{
 .part-header .header-ico{
 	margin-right: 12px;
 }
+.ah-popup{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	display: table;
+	vertical-align: middle;
+	z-index: 9999;
+	text-align: center;
+	padding-top: 88px;
+	display: none;
+}
+.ah-popup-container{
+	display: inline-block;
+	text-align: left;
+	box-shadow: 0px 0px 200px 20px #000;
+	background-color: #fff;
+	position: relative;
+}
+.ah-close-popup{
+	position: absolute;
+	right: -5px;
+	top: -10px;
+	height: 35px;
+	width: 35px;
+	background: url('../images/ui/close-popup.png') no-repeat;
+	z-index: 100;
+	cursor: pointer;
+}
 /**styling main-header**/
 #main-header{
 	background-color: #182a6c;
@@ -490,6 +520,7 @@ homepage styling
 .finish-header{
 	padding: 18px 0px 16px 0px ;
 	background: url('../images/ui/finish_header.jpg') 0px 0px no-repeat;
+	min-height: 150px;
 }
 .finish-checkout{
 	float: right;
@@ -573,6 +604,9 @@ homepage styling
 	background-color: #cc2421;
 	text-align: center;
 }
+.cart-slider .slide-pointer{
+	cursor: pointer;
+}
 .cart-slider .marker{
 	color: #fff !important;
 	font-size: 18px;
@@ -611,3 +645,42 @@ homepage styling
  background-image: -o-linear-gradient(top, #eb1a14, #780521);
  background-image: linear-gradient(to bottom, #eb1a14, #780521);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#eb1a14, endColorstr=#780521);
 }
+
+.finish-popup-content{
+	border-top: 5px solid #B31613;
+	width: 720px;
+	margin: auto;
+	position: relative;
+}
+.finish-popup-content ul{
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+.finish-popup-content .page-content{
+	padding-right: 234px !important;
+}
+.finish-promo{
+	text-align: center;
+	position: absolute;
+	top: -5px; 
+	right: 0px;
+	width: 234px;
+	padding: 0px 32px;
+}
+.promo-value{
+	font-size: 48px;
+	color: #cc2421 !important;
+	font-weight: 800;
+	margin-top: -12px;
+	margin-bottom: 0px;
+}
+.date-list li{
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+/***************
+6.thank you 
+***************/

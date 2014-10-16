@@ -7,10 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/norstar.css">
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600,800' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
+	<script type="text/javascript" src="js/norstar.js"></script>
 	<!-- Include the plugin *after* the jQuery library -->
 	<!-- <script src="js/bjqs-1.3.min.js"></script> -->
 
@@ -41,7 +42,7 @@
 						<li><a href="#">Forhandlere</a></li>
 						<li><a href="#">Konkurrence</a></li>
 						<li><a href="#">Spil</a></li>
-						<li><a href="#">Nyheder</a></li>
+						<li><a href="#">Nyheder</a></li>sssss
 				</ul>	
 			</div>
 		</div>
@@ -52,7 +53,7 @@
 				<div class="finish-header page-wrapper clearfix">
 					<div class="finish-checkout">
 						<button class="done-btn"><img src="images/ui/done-icon.png">FÆRDIG</button>
-						<p class="finish-question">Hvordan gør jeg? <span><a href="#"><img src="images/ui/finish-question.png"></a></span></p>
+						<p class="finish-question">Hvordan gør jeg? <span><a href="#" class="ah-popup-link" popup-target="finish-popup"><img src="images/ui/finish-question.png"></a></span></p>
 					</div>
 				</div>
 				<div class="clearfix">
@@ -141,7 +142,7 @@
 											</ul>
 										</li>
 										<li >
-											<!-- <ul>
+											<ul>
 												<li class="clearfix product-item">
 													<div class="product-thumb">
 														<img src="images/ui/slider_sample_product/barbie.png">
@@ -198,16 +199,16 @@
 														</a>
 													</div>
 												</li>
-											</ul> -->
+											</ul>
 										</li>
 									</ul>
 								</div>
 								
 								<div class="slider-control">
 									<div class="slider-navigator">
-										<span class="slide-left"><img src="images/ui/slide-left.png"></span>
+										<span class="slide-pointer slide-left"><img src="images/ui/slide-left.png"></span>
 										<p class="marker">Slide <span class="current">1</span> af <span class="total">5</span></p>
-										<span class="slide-right"><img src="images/ui/slide-right.png"></span>
+										<span class="slide-pointer slide-right"><img src="images/ui/slide-right.png"></span>
 									</div>
 								</div>
 							</div>
@@ -215,7 +216,53 @@
 					</div>
 				</div>
 				
-		</div>
+				<div class="ah-popup" popup-data="finish-popup">
+					<div class="ah-popup-container">
+						<div class="ah-close-popup"></div>
+						<div class="ah-popup-content finish-popup-content">
+							<div class="part-header"><span class="header-ico"><img src="images/ui/konkurrence-ico.png"></span>SÅDAN GØR DU</div>
+							<div class="page-content">
+								<p>Her har du chancen for at vinde dine største juleønsker</p>
+								<p>
+									Lav din egen ønskeliste i julekataloget. Så deltager du automatisk i vores store julekonkurrence:
+
+								</p>
+								<br />
+								<h4><strong>Sådan gør du:</strong></h4>
+								<br/>
+								<ul class="steps">
+									<li>1. Tryk på ‘Start’</li>
+									<li>2. Find det legetøj du ønsker dig allermest i julekataloget</li>
+									<li>3. Tilføj produkterne med et lille klik til din egen ønskeliste</li>
+									<li>4. Udfyld konkurrenceformularen</li>
+								</ul>
+
+								<p>Vi trækker lod 4 gange om spændende legetøj til en værdi af 500€.</p>
+								<br/>
+								<p><span style="text-decoration:underline">Klik her</span> for at læse betingelserne.</p>
+								<br/>
+								<br/>
+								<br/>
+							</div>
+							<div class="finish-promo">
+								<div class="xmas-bubble" style="margin-bottom: 14px;">
+									<img src="images/promo/vindgaver.png">
+								</div>
+								<p style="font-style:italic">Vi trækker lod  om 
+									4 præmier til en værdi af...</p>
+									<p class="promo-value">500€</p>
+									<ul class="date-list">
+										<li>Søndag d. 1 December</li>
+										<li>Søndag d. 8 December</li>
+										<li>Søndag d. 15 December</li>
+										<li>Søndag d. 22 December</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>		
+				</div>
 	</div>
 
 	<!--FOOTER-->
