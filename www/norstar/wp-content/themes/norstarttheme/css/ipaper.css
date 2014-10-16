@@ -1,0 +1,25 @@
+.ipaper-overlay {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.75);;
+    color: #000;
+    font-family: st_ryde_regular;
+    font-weight: normal;
+    left:0;
+    top:0;
+    margin:20px;
+    padding: 20px 20px 20px 20px; 
+    overflow: hidden;
+}
+
+.ipaper-overlay .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    z-index:9999;
+    background: transparent url("../images/ipaper-close.png") no-repeat center top;
+}
