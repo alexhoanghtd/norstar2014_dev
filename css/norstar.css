@@ -684,3 +684,20 @@ homepage styling
 /***************
 6.thank you 
 ***************/
+.thankyou-content{
+	text-align: center;
+	font-family: 'Open Sans';
+
+}
+.thankyou-content p{
+	font-size: 22px;
+}
+.thanks-message{
+	font-size: 24px;
+	font-weight: 700;
+	color: #cc2421;
+}
+.thankyou-bg{
+	background: url('../images/ui/thankyou-bg.png') -290px 0px no-repeat;
+	height: 600px;
+}
