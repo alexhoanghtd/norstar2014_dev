@@ -546,68 +546,75 @@ homepage styling
 .done-btn img{
 	padding-right: 24px;
 }
-.cart-slider-container .part-header{
+.wishlist-slider-container .part-header{
 	text-align: center;
 	border-left: 1px solid #b82529;
 }
-.cart-slider ul{
+.wishlist-slider ul{
 	padding: 0px;
 	margin: 0px;
 }
-.cart-slider .product-item {
+.wishlist-slider .product-item {
 	display: block;
 	height: 128px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #bbb;
+	overflow: hidden;
 }
-.cart-slider .product-thumb{
+.wishlist-slider .product-thumb{
 	height: 128px;
 	width: 128px;
 	float: left;
-	background-color: #ccc;
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
+	background: url('../images/ui/wish-item-empty.png') center #ccc no-repeat;
+	border-bottom: 1px solid
 }
-.cart-slider .product-thumb img{
+.wishlist-slider .product-thumb img{
 	position: relative;
 	z-index: 1;
 }
-.cart-slider .product-thumb:after{
+.wishlist-slider .product-thumb:after{
 	content: " ";
 	position: absolute;
 	display: block;
 	height: 100%;
 	width: 100%;
-	background: url('../images/ui/cart-remove.png') no-repeat;
+	background: url('../images/ui/wishlist-remove.png') no-repeat;
 	z-index: 2;
 	top: 0px;
 	left: 0px;
 	opacity: 0;
 	transition: opacity .3s;
 }
-.cart-slider .product-thumb:hover:after{
+.wishlist-slider .product-thumb:hover:after{
 	opacity: 1;
 }
-.cart-slider .product-info{
+.wishlist-slider .product-info{
 
 	padding: 24px 15px 0px 148px;
 }
-.cart-slider .product-item h4{
+.wishlist-slider .product-item h4{
 	font-size: 18px;
 	color: #494949;
 	font-weight: 600;
 	margin: 0px;
 	height:38px;
 }
-.cart-slider .slider-control{
+.wishlist-slider .slider-control{
 	color: #fff;
 	background-color: #cc2421;
 	text-align: center;
 }
-.cart-slider .slide-pointer{
+.wishlist-slider .slide-pointer{
 	cursor: pointer;
+	transistion: opacity .3s;
 }
-.cart-slider .marker{
+.wishlist-slider .slide-pointer.unavail{
+	cursor: default !important;
+	opacity: .3;
+}
+.wishlist-slider .marker{
 	color: #fff !important;
 	font-size: 18px;
 	margin-bottom: 0px;
@@ -679,6 +686,16 @@ homepage styling
 .date-list li{
 	font-weight: 700;
 	margin-bottom: 6px;
+}
+.wishlist-products{
+	height: 640px;
+	position: relative;
+}
+.wishlist-products > li{
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 0px;
 }
 
 /***************
