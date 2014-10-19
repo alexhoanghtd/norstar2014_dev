@@ -778,6 +778,18 @@ homepage styling
 /*************
 5.formmular
 *************/
+.email-info{position: relative;}
+.email-info.disable:before{
+	content: " ";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	top: 0px
+	left: 0px;
+	background-color: #fff;
+	opacity: .5;
+}
 .checkout-form {
 	padding-bottom: 44px;
 }

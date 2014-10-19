@@ -1,5 +1,5 @@
 //empty whishlist slot
-		var empty_item = '<li class="clearfix product-item"><div class="product-thumb"></div><div class="product-info"><a href="#"><h4>Intet ønske</h4><p>Ingen kommentar</p></a></div></li>'
+var empty_item = '<li class="clearfix product-item"><div class="product-thumb"></div><div class="product-info"><a href="#"><h4>Intet ønske</h4><p>Ingen kommentar</p></a></div></li>'
 $(document).ready(function(){
 	$(function(){
 		$('.ah-popup-link').click(function(){
@@ -11,8 +11,15 @@ $(document).ready(function(){
 		});
 	});
 	$(function(){
-
-		
+		$('#emailcheck').click(function(){
+			if($('#emailcheck').is(':checked')) {
+			    $('.email-info').removeClass('disable');
+			} else {
+			    $('.email-info').addClass('disable');
+			}
+		});
+	});
+	$(function(){		
 		//initiate the wishlist slider content
 		var wishlist_pages = $('.wishlist-products > li');
 		var page_number = wishlist_pages.length;
