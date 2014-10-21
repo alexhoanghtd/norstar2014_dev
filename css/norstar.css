@@ -803,8 +803,7 @@ homepage styling
 	border-top: 1px solid #e7e7e7;
 }
 .checkout-form input[type="text"], .checkout-form textarea{
-	padding: 0px 20px;
-	line-height: 45px;
+	padding: 12px 20px;
 	border: 2px solid #cc2421;
 	outline: none;
 }
