@@ -472,10 +472,11 @@ homepage styling
 	position: relative;
 	width: 100%;
 	background-color: #fcfcfc;
-	line-height: 43px;
 	border:  1px solid #eceded;
 	margin-bottom: 10px;
 	padding-left: 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 .contact-form .contact-message{
 	margin-bottom: 30px;
