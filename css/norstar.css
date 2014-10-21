@@ -860,19 +860,19 @@ homepage styling
 	margin-right: 14px;
 }
 .email-info{padding-top: 12px;}
-::-webkit-input-placeholder {
+.email-info *::-webkit-input-placeholder {
    color: #3e464b;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.email-info *:-moz-placeholder { /* Firefox 18- */
    color: #3e464b;  
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+.email-info *::-moz-placeholder {  /* Firefox 19+ */
    color: #3e464b;  
 }
 
-:-ms-input-placeholder {  
+.email-info *:-ms-input-placeholder {  
    color: #3e464b;  
 }
 .checkout-form input[type="submit"]{}
