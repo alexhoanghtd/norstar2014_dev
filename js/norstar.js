@@ -43,6 +43,21 @@ $(document).ready(function(){
 		//initiate the wishlist slider control
 		wishlist_slider_control();
 	});
+	//search box control
+	$(function(){
+		$('#main-search-btn').click(function(){
+			var state = $(this).attr('state');
+			if(state === 'on'){
+				$('#main-search-form').fadeOut();
+				$(this).attr('state','');
+			}else{
+				$('#main-search-form').fadeIn();
+				$('#main-search-form > input').focus();
+				$(this).attr('state','on');
+			}
+
+		});
+	});
 
 });	
 

@@ -11,6 +11,7 @@ body{
 	background-color: #2f3d87;
 	background: url('../images/stars.png') #2f3d87 center 158px no-repeat;
 	font-family: 'KlavikaMedium', sans-serif;
+	overflow-x: hidden;
 }
 a{
 	font-family: 'Open Sans', sans-serif;
@@ -21,13 +22,40 @@ ul,li,ol{
 .navbar-nav>li>a:hover{
 	background: transparent;
 }
+/** responsive for norstar***/
+.page-wrapper:before , .page-wrapper:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+.page-wrapper
+{margin-right:auto;margin-left:auto}
+@media (min-width:768px){.page-wrapper{width:750px}}
+@media (min-width:992px){.page-wrapper{width:980px}}
+@media (min-width:1200px){.page-wrapper{width:980px}}
+
+
+.home-menu-btn{
+	color: #fff;
+	font-family: 'KlavikaMedium', sans-serif;
+	text-transform: uppercase;
+	float: right;
+	padding: 36px 10px !important;
+}
+@media(max-width: 992px){
+	#logo{
+		float: left;
+		padding-left: 15px;
+	}
+}
+@media(max-width: 768px){
+	#main-menu-nav > li > a{
+		line-height: 44px !important;
+	}
+}
 /**************
 -1.Genneral
 **************/
-.page-wrapper{
-	width: 980px;
-	margin: auto;
-}
 .wrapper{
 	width: 1064px;
 	margin: auto;
@@ -75,6 +103,19 @@ ul,li,ol{
 	cursor: pointer;
 }
 /**styling main-header**/
+#menu-main-menu {
+	padding: 0px;
+	float: right;
+	margin-bottom: 0px;
+}
+#menu-main-menu li{
+	display: inline-block;
+}
+#menu-main-menu li a{
+	color: #fff;
+	padding: 6px 15px;
+	display: inline-block;
+}
 #main-header{
 	background-color: #182a6c;
 	border-bottom: 5px solid #fab819;
@@ -109,10 +150,65 @@ ul,li,ol{
 }
 #main-content{
 	min-height: 600px;
-	font-family: "Open Sans"
+	/*font-family: "Open Sans"*/
+}
+/*the search form */
+#main-nav{
+	position: relative;
+}
+#main-search-form{
+	padding-left: 220px;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	right: 0px;
+	display: none;
+}
+#main-search-form input{
+	height: 108px;
+	border: none;
+	width: 100%;
+	margin-right: -15px;
+	background-color: #182A6C;
+	outline: none;
+	padding: 0px 20px;
+	font-size: 32px;
+	color: #fff;
+}
+#main-search-btn{
+	height: 108px;
+	width: 50px;
+	background: url('../images/ui/search.png') center  no-repeat;
+	position: absolute;
+	top: 0px;
+	right: -50px;
+	border: none;
+	outline: none;
+	z-index: 100;
+}
+#main-search-btn[state="on"]{
+	background: url('../images/ui/close.png') center no-repeat;
+}
+#main-search-btn:hover{
+	background-color: #142155;
+}
+@media(max-width: 992px){
+	#main-search-btn{
+		right: 70px !important;
+	}
+	#main-search-form{
+		padding-left: 240px;
+		padding-right: 100px;
+	}
 }
 
 /**styling footer**/
+.footer-social{
+	padding: 0px;
+}
+.footer-social > li{
+	display: inline-block;
+}
 #main-footer{
 	border-top: 5px solid #fab819;
 	background-color: #192b6f;
@@ -122,7 +218,7 @@ ul,li,ol{
 }
 #footer-top{
 	padding-top: 25px;
-	background: url('../images/footer-bg.png') center 25px no-repeat;
+	background: url('../images/footer-bg.png') center 100% no-repeat;
 }
 #footer-copyright{
 	background-color: #12215b;
@@ -147,6 +243,15 @@ ul,li,ol{
 .footer-links > div > ul > li > a:hover{
 	background-color: transparent;
 	color: #fff !important;
+}
+
+@media(max-width: 768px){
+	#footer-top{
+		padding: 15px;
+	}
+	#footer-copyright{
+		padding: 15px;
+	}
 }
 
 /**************
@@ -237,6 +342,7 @@ homepage styling
 }
 #promo-video *{
 	z-index: 1;
+	position: relative;
 }
 #promo-video:after{
 	content: " ";
@@ -317,7 +423,7 @@ homepage styling
 }
 #facebook-card .promo-picture{
 	top: 40px;
-	right: 259px;
+	right: 249px;
 }
 #facebook-card{
 	background-color: #4e69a2;
@@ -512,6 +618,9 @@ homepage styling
 /****************
 4.finish
 ****************/
+#norstar-finish{
+	font-family: "Open Sans", helvetica, sans-serif;
+}
 #norstar-finish .page-content{
 	padding: 22px 15px;
 }

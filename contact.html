@@ -3,17 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Norstar | Konkaktss</title>
+	<title>Norstar</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/norstar.css">
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/norstar.js"></script>
+	<script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
+
 </head>
 <body>
 	<header id="main-header" class="masthead clearfix">
 		<nav id="top-nav" class="clearfix">
 			<div class="page-wrapper">
-				<ul id="menu-main-menu" class="nav navbar-nav navbar-right">
+				<ul id="menu-main-menu" class="clearfix">
 						<li><a href="#">Om norstar</a></li>
 						<li><a href="#">Presses</a></li>
 						<li><a href="#">Konkakt</a></li>
@@ -22,22 +27,34 @@
 		</nav>
 		<div id="main-nav" class="page-wrapper">
 			<div  class="row">
+				<form id="main-search-form">
+					<input	type="text" placeholder="search...">
+				</form>
 				<div class="navbar-header clearfix">
 					<div id="logo" class="clearfix">
 						<a href="#" class="navbar-brand"><img src="images/logo.png"></a>
 					</div>
+					<button id="main-search-btn"></button>
+					<button class="navbar-toggle home-menu-btn" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			    		menu
+			    	</button>
 				</div>
-				<ul id="main-menu-nav" class="nav navbar-nav navbar-right">
+				<nav class="navbar-collapse home-nav bs-navbar-collapse collapse" role="navigation">
+					<ul id="main-menu-nav" class="nav navbar-nav navbar-right">
 						<li><a href="#">Forside</a></li>
 						<li><a href="#">Katalog</a></li>
 						<li><a href="#">Forhandlere</a></li>
 						<li><a href="#">Konkurrence</a></li>
 						<li><a href="#">Spil</a></li>
 						<li><a href="#">Nyheder</a></li>
-				</ul>	
+					</ul>	
+				</nav>
+
+				
 			</div>
 		</div>
 	</header>
+
 
 	<div id="main-content">
 		<div class="wrapper">
@@ -125,7 +142,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3">
-					<ul class="nav navbar-nav social-links">
+					<ul class="footer-social">
 						<li><a href="#"><img src="images/social/insta.png"></a></li>
 						<li><a href="#"><img src="images/social/youtube.png"></a></li>
 						<li><a href="#"><img src="images/social/fb.png"></a></li>
@@ -137,9 +154,6 @@
 		<div id="footer-copyright">
 			<div class="page-wrapper"><p>NORSTAR OY - Alle rettigheder forbeholdt</p></div>
 		</div>
-			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-			<script type="text/javascript" src="js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function(){
 					$("#pop-girl-product").als({
